@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getAllReports } from '../features/report/reportSlice';
+import { logout } from '../features/auth/authSlice';
 import ReportCard from '../components/ReportCard';
+import { Button } from '@mui/material';
 
 function Dashboard() {
   const reports = useSelector((state) => state.reports.reports);
@@ -17,16 +19,23 @@ function Dashboard() {
   return (
     <div>
       <h1>Dashboard</h1>
+      <Button
+        variant="outlined"
+        onClick={() => dispatch(logout())}>
+        Logout
+      </Button>
       Welcome {user.user ? user.user.firstName : ''} {user.user ? user.user.lastName : ''}
-      {reports.map((report) => <ReportCard
-        key={report._id}
-        id={report._id}
-        name={report.name}
-        email={report.email}
-        statusResolved={report.isResolved}
-        description={report.description}
-        status={report.status}
-      /> )}
+      {reports.map((report) => (
+        <ReportCard
+          key={report._id}
+          id={report._id}
+          name={report.name}
+          email={report.email}
+          statusResolved={report.isResolved}
+          description={report.description}
+          status={report.status}
+        />
+      ))}
     </div>
   );
 }
