@@ -31,3 +31,65 @@ PORT= <Enter Port number for your backend server>
 2. src\features\auth\authService.jsx
 3. src\pages\DashboardReport.jsx
 ```
+
+# Frontend
+Web-Framework: [ReactJS](https://reactjs.org/)
+Build-Framework: [Vite](https://vitejs.dev/)
+**Scripts**
+Run Development Server: ``npm run dev``
+Run Build Process: ``npm run build``
+Preview Build: ``npm run preview``
+
+# Backend
+Framework: [ExpressJS](https://expressjs.com/)
+**Scripts**
+Run Server: ``npm start``
+
+**API ENDPOINTS**
+1. /api/signin
+```
+@post
+# Body
+email:  string().email().required(),
+password:  string().required(),
+```
+2. /api/report
+```
+@post
+# Body
+name:  string(),
+email:  string().email(),
+contact:  number(),
+location:  string().required(),
+description:  string().required(),
+accusedDetails:  string().required(),
+```
+3. /api/dashboard/reports/all 🔒
+```
+@get
+# Header
+[Authorization Bearer Token]
+```
+4. /api/dashboard/reports/report/:id🔒
+```
+@get
+# Header
+[Authorization Bearer Token]
+
+# Params
+id: [Report ID]
+```
+5. /api/dashboard/reports/update/:id🔒
+```
+@put
+# Header
+[Authorization Bearer Token]
+
+# Params
+id: [Report ID]
+
+#Body
+status:  string(),
+isResolved:  boolean(),
+note:  string(),
+```
