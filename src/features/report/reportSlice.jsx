@@ -10,9 +10,8 @@ const initialState = {
 
 export const getAllReports = createAsyncThunk('reports/all', async (user, thunkAPI) => {
   try {
-    const user = thunkAPI.getState().auth.user.data;
     console.log('Get All Reports Thunk');
-    return await reportsService.getAll(user);
+    return await reportsService.getAll(user.user.data);
   } catch (error) {
     const message =
       (error.response && error.response.data && error.response.data.message) ||

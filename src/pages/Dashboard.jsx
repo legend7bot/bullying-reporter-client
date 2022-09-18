@@ -4,13 +4,13 @@ import { getAllReports } from '../features/report/reportSlice';
 
 function Dashboard() {
   const report = useSelector((state) => state.reports.reports);
-  const user = useSelector((state) => state.auth.isLogin);
+  const user = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
   console.log(report);
   useEffect(() => {
     dispatch(getAllReports(user));
-  }, [user]);
+  }, [user.isLogin]);
   return (
     <div>
       Dashboard
