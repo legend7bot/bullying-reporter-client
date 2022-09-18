@@ -12,7 +12,7 @@ function ReportCard(props) {
   return (
     <>
       <div
-        className="card"
+        className="card inline"
         style={{ width: '18rem' }}>
         <div className="card-body">
           <h5 className="card-title">
