@@ -9,11 +9,14 @@ function Dashboard() {
 
   console.log(report);
   useEffect(() => {
-    dispatch(getAllReports(user));
-  }, [user.isLogin]);
+    if (user.isLogin) {
+      dispatch(getAllReports(user));
+    }
+  }, [user.isLogin, dispatch]);
   return (
     <div>
-      Dashboard
+      <h1>Dashboard</h1>
+      Welcome {user.user ? user.user.firstName : ''} {user.user ? user.user.lastName : ''}
       {report.map((report) => (
         <p key={report._id}>{report._id}</p>
       ))}

@@ -7,8 +7,7 @@ const login = async (userData) => {
   const response = await axios.post(API_URL + 'signin', userData);
 
   if (response.data) {
-    console.log('Response Data: ', response.data);
-    localStorage.setItem('user', JSON.stringify(response.data));
+    localStorage.setItem('user', JSON.stringify(response.data.data));
   }
 
   return response.data;

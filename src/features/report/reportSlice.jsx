@@ -11,7 +11,7 @@ const initialState = {
 export const getAllReports = createAsyncThunk('reports/all', async (user, thunkAPI) => {
   try {
     console.log('Get All Reports Thunk');
-    return await reportsService.getAll(user.user.data);
+    return await reportsService.getAll(user.user);
   } catch (error) {
     const message =
       (error.response && error.response.data && error.response.data.message) ||
