@@ -32,6 +32,9 @@ function Navbar() {
                             <li className="nav-item">
                                 <NavLink to="/report" className="ml-4 nav-link btn btn-primary btn-sm rounded">File Report</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink to="/login" className="ml-4 nav-link btn btn-primary btn-sm rounded">Admin</NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>

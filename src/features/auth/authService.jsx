@@ -1,14 +1,14 @@
 import axios from 'axios';
 
-const API_URL = 'https://reqres.in/api/';
+const API_URL = 'http://localhost:5000/api/';
 
 // Login user
 const login = async (userData) => {
-  const response = await axios.post(API_URL + 'login', userData);
+  const response = await axios.post(API_URL + 'signin', userData);
 
   if (response.data) {
     console.log('Response Data: ', response.data);
-    localStorage.setItem('user', JSON.stringify(response.data.token));
+    localStorage.setItem('user', JSON.stringify(response.data));
   }
 
   return response.data;
