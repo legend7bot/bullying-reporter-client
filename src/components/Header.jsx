@@ -4,8 +4,8 @@ function Header() {
   return (
     <header className="header">
         <div className="overlay">
-            <h1 className="subtitle">LeadMark Landing Page</h1>
-            <h1 className="title">We Are Creative</h1>  
+            <h1 className="subtitle">Pledge With Us</h1>
+            <h1 className="title">Stop Bullying</h1>  
         </div>  
         <div className="shape">
             <svg viewBox="0 0 1500 200">

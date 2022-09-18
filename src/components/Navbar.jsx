@@ -21,13 +21,13 @@ function Navbar() {
                                 <a className="nav-link" href="#about">About Us</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#blog">Blog</a>
+                                <a className="nav-link" href="#blog">Awareness</a>
                             </li>
 
                             <li className="nav-item">
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#testmonial">Testmonial</a>
+                                <a className="nav-link" href="#testmonial">Testimonial</a>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="/report" className="ml-4 nav-link btn btn-primary btn-sm rounded">File Report</NavLink>
