@@ -33,15 +33,15 @@ PORT= <Enter Port number for your backend server>
 ```
 
 # Frontend
-Web-Framework: [ReactJS](https://reactjs.org/)
-Build-Framework: [Vite](https://vitejs.dev/)
+Web-Framework: [ReactJS](https://reactjs.org/)\
+Build-Framework: [Vite](https://vitejs.dev/)\
 **Scripts**
-Run Development Server: ``npm run dev``
-Run Build Process: ``npm run build``
+Run Development Server: ``npm run dev``\
+Run Build Process: ``npm run build``\
 Preview Build: ``npm run preview``
 
 # Backend
-Framework: [ExpressJS](https://expressjs.com/)
+Framework: [ExpressJS](https://expressjs.com/)\
 **Scripts**
 Run Server: ``npm start``
 
