@@ -11800,3 +11800,17 @@ button:active , button:focus{
 .required-start{
   color:red;
 }
+
+.inline{
+  display: inline-block;
+}
+
+.dashboard-heading{
+  text-align: center;
+}
+
+.logout-btn{
+  display: inline-block;
+  margin-left: 4rem !important;
+}
+

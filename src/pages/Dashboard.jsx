@@ -17,14 +17,17 @@ function Dashboard() {
   }, [user.isLogin, dispatch]);
   console.log('reports', reports);
   return (
-    <div>
-      <h1>Dashboard</h1>
+    <div className='dashboard-body'>
+      <h1 className='dashboard-heading'>Dashboard</h1>
+      <div className='dashboard-heading'>
+      Welcome {user.user ? user.user.firstName : ''} {user.user ? user.user.lastName : ''}
       <Button
         variant="outlined"
+        className='logout-btn'
         onClick={() => dispatch(logout())}>
         Logout
       </Button>
-      Welcome {user.user ? user.user.firstName : ''} {user.user ? user.user.lastName : ''}
+      </div>
       {reports.map((report) => (
         <ReportCard
           key={report._id}

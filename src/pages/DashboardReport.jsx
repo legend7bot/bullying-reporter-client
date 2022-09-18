@@ -54,8 +54,7 @@ function DashboardReport() {
   };
 
   return (
-    <div>
-      Report of {id}
+    <div className='dashboard-body'>
       {reportData ? (
         <>
           <Button
@@ -70,14 +69,14 @@ function DashboardReport() {
             }}
             noValidate
             autoComplete="off">
-            <h3>Name: {reportData.name}</h3>
-            <h4>Email: {reportData.email}</h4>
-            <h4>Contact: {reportData.contact}</h4>
-            <h4>Location: {reportData.location}</h4>
-            <h4>Resolved: {reportData.isResolved ? 'Yes' : 'No'}</h4>
-            <p>Description: {reportData.description}</p>
-            <p>Accused Details: {reportData.accusedDetails}</p>
-
+            <h2 className="data">Name: {reportData.name}</h2>
+            <h4 className="data">Email: {reportData.email}</h4>
+            <h4 className="data">Contact: {reportData.contact}</h4>
+            <h4 className="data">Location: {reportData.location}</h4>
+            <h4 className="data">Resolved: {reportData.isResolved ? 'Yes' : 'No'}</h4>
+            <h6 className="data">Description: {reportData.description}</h6>
+            <h6 className="data">Accused Details: {reportData.accusedDetails}</h6>
+            <div className="gap"></div>
             <FormControl>
               <FormLabel id="demo-controlled-radio-buttons-group">Resolved</FormLabel>
               <RadioGroup
