@@ -1,3 +1,6 @@
+<img src="https://static.wixstatic.com/media/b21544_d39286c28cd542fcac93cdc1f227d9c3~mv2.png/v1/fill/w_120,h_56,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/b21544_d39286c28cd542fcac93cdc1f227d9c3~mv2.png" alt="alt text" title="HTM"/>
+Built for HTM 3.0
+
 # Welcome to the project [Bullying Reporter](https://bullyingreporter.netlify.app/)!
 
 Project Build: https://bullyingreporter.netlify.app/
