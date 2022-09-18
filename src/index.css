@@ -2162,7 +2162,7 @@ pre code {
   border: 0;
 }
 
-.form-control {
+.form-control1 {
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -2180,18 +2180,18 @@ pre code {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .form-control {
+  .form-control1 {
     -webkit-transition: none;
     transition: none;
   }
 }
 
-.form-control::-ms-expand {
+.form-control1::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
-.form-control:focus {
+.form-control1:focus {
   color: #495057;
   background-color: transparent;
   border-color: #ffd0c2;
@@ -2199,43 +2199,43 @@ pre code {
   box-shadow: none;
 }
 
-.form-control::-webkit-input-placeholder {
+.form-control1::-webkit-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control::-moz-placeholder {
+.form-control1::-moz-placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control:-ms-input-placeholder {
+.form-control1:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control::-ms-input-placeholder {
+.form-control1::-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control::placeholder {
+.form-control1::placeholder {
   color: #6c757d;
   opacity: 1;
 }
 
-.form-control:disabled, .form-control[readonly] {
+.form-control1:disabled, .form-control1[readonly] {
   background-color: #e9ecef;
   opacity: 1;
 }
 
-select.form-control:focus::-ms-value {
+select.form-control1:focus::-ms-value {
   color: #495057;
   background-color: transparent;
 }
 
-.form-control-file,
-.form-control-range {
+.form-control1-file,
+.form-control1-range {
   display: block;
   width: 100%;
 }
@@ -2262,7 +2262,7 @@ select.form-control:focus::-ms-value {
   line-height: 1.5;
 }
 
-.form-control-plaintext {
+.form-control1-plaintext {
   display: block;
   width: 100%;
   padding-top: 0.375rem;
@@ -2275,12 +2275,12 @@ select.form-control:focus::-ms-value {
   border-width: 1px 0;
 }
 
-.form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
+.form-control1-plaintext.form-control1-sm, .form-control1-plaintext.form-control1-lg {
   padding-right: 0;
   padding-left: 0;
 }
 
-.form-control-sm {
+.form-control1-sm {
   height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
@@ -2288,7 +2288,7 @@ select.form-control:focus::-ms-value {
   border-radius: 0;
 }
 
-.form-control-lg {
+.form-control1-lg {
   height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
@@ -2296,11 +2296,11 @@ select.form-control:focus::-ms-value {
   border-radius: 0;
 }
 
-select.form-control[size], select.form-control[multiple] {
+select.form-control1[size], select.form-control1[multiple] {
   height: auto;
 }
 
-textarea.form-control {
+textarea.form-control1 {
   height: auto;
 }
 
@@ -2394,7 +2394,7 @@ textarea.form-control {
   border-radius: 0.25rem;
 }
 
-.was-validated .form-control:valid, .form-control.is-valid {
+.was-validated .form-control1:valid, .form-control1.is-valid {
   border-color: #6ab04c;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%236ab04c' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
@@ -2403,18 +2403,18 @@ textarea.form-control {
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 
-.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+.was-validated .form-control1:valid:focus, .form-control1.is-valid:focus {
   border-color: #6ab04c;
   box-shadow: 0 0 0 0.2rem rgba(106, 176, 76, 0.25);
 }
 
-.was-validated .form-control:valid ~ .valid-feedback,
-.was-validated .form-control:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback,
-.form-control.is-valid ~ .valid-tooltip {
+.was-validated .form-control1:valid ~ .valid-feedback,
+.was-validated .form-control1:valid ~ .valid-tooltip, .form-control1.is-valid ~ .valid-feedback,
+.form-control1.is-valid ~ .valid-tooltip {
   display: block;
 }
 
-.was-validated textarea.form-control:valid, textarea.form-control.is-valid {
+.was-validated textarea.form-control1:valid, textarea.form-control1.is-valid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
@@ -2436,9 +2436,9 @@ textarea.form-control {
   display: block;
 }
 
-.was-validated .form-control-file:valid ~ .valid-feedback,
-.was-validated .form-control-file:valid ~ .valid-tooltip, .form-control-file.is-valid ~ .valid-feedback,
-.form-control-file.is-valid ~ .valid-tooltip {
+.was-validated .form-control1-file:valid ~ .valid-feedback,
+.was-validated .form-control1-file:valid ~ .valid-tooltip, .form-control1-file.is-valid ~ .valid-feedback,
+.form-control1-file.is-valid ~ .valid-tooltip {
   display: block;
 }
 
@@ -2517,7 +2517,7 @@ textarea.form-control {
   border-radius: 0.25rem;
 }
 
-.was-validated .form-control:invalid, .form-control.is-invalid {
+.was-validated .form-control1:invalid, .form-control1.is-invalid {
   border-color: #eb4d4b;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23eb4d4b' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23eb4d4b' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
@@ -2526,18 +2526,18 @@ textarea.form-control {
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 
-.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+.was-validated .form-control1:invalid:focus, .form-control1.is-invalid:focus {
   border-color: #eb4d4b;
   box-shadow: 0 0 0 0.2rem rgba(235, 77, 75, 0.25);
 }
 
-.was-validated .form-control:invalid ~ .invalid-feedback,
-.was-validated .form-control:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
-.form-control.is-invalid ~ .invalid-tooltip {
+.was-validated .form-control1:invalid ~ .invalid-feedback,
+.was-validated .form-control1:invalid ~ .invalid-tooltip, .form-control1.is-invalid ~ .invalid-feedback,
+.form-control1.is-invalid ~ .invalid-tooltip {
   display: block;
 }
 
-.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
+.was-validated textarea.form-control1:invalid, textarea.form-control1.is-invalid {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
@@ -2559,9 +2559,9 @@ textarea.form-control {
   display: block;
 }
 
-.was-validated .form-control-file:invalid ~ .invalid-feedback,
-.was-validated .form-control-file:invalid ~ .invalid-tooltip, .form-control-file.is-invalid ~ .invalid-feedback,
-.form-control-file.is-invalid ~ .invalid-tooltip {
+.was-validated .form-control1-file:invalid ~ .invalid-feedback,
+.was-validated .form-control1-file:invalid ~ .invalid-tooltip, .form-control1-file.is-invalid ~ .invalid-feedback,
+.form-control1-file.is-invalid ~ .invalid-tooltip {
   display: block;
 }
 
@@ -2673,12 +2673,12 @@ textarea.form-control {
             align-items: center;
     margin-bottom: 0;
   }
-  .form-inline .form-control {
+  .form-inline .form-control1 {
     display: inline-block;
     width: auto;
     vertical-align: middle;
   }
-  .form-inline .form-control-plaintext {
+  .form-inline .form-control1-plaintext {
     display: inline-block;
   }
   .form-inline .input-group,
@@ -3791,8 +3791,8 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
-.input-group > .form-control,
-.input-group > .form-control-plaintext,
+.input-group > .form-control1,
+.input-group > .form-control1-plaintext,
 .input-group > .custom-select,
 .input-group > .custom-file {
   position: relative;
@@ -3804,22 +3804,22 @@ input[type="button"].btn-block {
   margin-bottom: 0;
 }
 
-.input-group > .form-control + .form-control,
-.input-group > .form-control + .custom-select,
-.input-group > .form-control + .custom-file,
-.input-group > .form-control-plaintext + .form-control,
-.input-group > .form-control-plaintext + .custom-select,
-.input-group > .form-control-plaintext + .custom-file,
-.input-group > .custom-select + .form-control,
+.input-group > .form-control1 + .form-control1,
+.input-group > .form-control1 + .custom-select,
+.input-group > .form-control1 + .custom-file,
+.input-group > .form-control1-plaintext + .form-control1,
+.input-group > .form-control1-plaintext + .custom-select,
+.input-group > .form-control1-plaintext + .custom-file,
+.input-group > .custom-select + .form-control1,
 .input-group > .custom-select + .custom-select,
 .input-group > .custom-select + .custom-file,
-.input-group > .custom-file + .form-control,
+.input-group > .custom-file + .form-control1,
 .input-group > .custom-file + .custom-select,
 .input-group > .custom-file + .custom-file {
   margin-left: -1px;
 }
 
-.input-group > .form-control:focus,
+.input-group > .form-control1:focus,
 .input-group > .custom-select:focus,
 .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
   z-index: 3;
@@ -3829,13 +3829,13 @@ input[type="button"].btn-block {
   z-index: 4;
 }
 
-.input-group > .form-control:not(:last-child),
+.input-group > .form-control1:not(:last-child),
 .input-group > .custom-select:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.input-group > .form-control:not(:first-child),
+.input-group > .form-control1:not(:first-child),
 .input-group > .custom-select:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -3928,12 +3928,12 @@ input[type="button"].btn-block {
   margin-top: 0;
 }
 
-.input-group-lg > .form-control:not(textarea),
+.input-group-lg > .form-control1:not(textarea),
 .input-group-lg > .custom-select {
   height: calc(1.5em + 1rem + 2px);
 }
 
-.input-group-lg > .form-control,
+.input-group-lg > .form-control1,
 .input-group-lg > .custom-select,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
@@ -3945,12 +3945,12 @@ input[type="button"].btn-block {
   border-radius: 0;
 }
 
-.input-group-sm > .form-control:not(textarea),
+.input-group-sm > .form-control1:not(textarea),
 .input-group-sm > .custom-select {
   height: calc(1.5em + 0.5rem + 2px);
 }
 
-.input-group-sm > .form-control,
+.input-group-sm > .form-control1,
 .input-group-sm > .custom-select,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
@@ -11119,31 +11119,31 @@ pre .code {
   width: 300px;
 }
 
-.form-control {
+.form-control1 {
   height: 40px;
   line-height: 30px;
   border-width: 0 0 2px 0;
   font-size: 14px;
 }
 
-.form-control:focus {
+.form-control1:focus {
   border-color: #ff6e42;
 }
 
-.form-control.form-control-sm {
+.form-control1.form-control1-sm {
   height: 30px;
   line-height: 35px;
   font-size: 13px;
 }
 
-.form-control.form-control-lg {
+.form-control1.form-control1-lg {
   font-size: 16px;
   height: 50px;
   line-height: 60px;
 }
 
-select.form-control,
-textarea.form-control {
+select.form-control1,
+textarea.form-control1 {
   line-height: 1.5;
 }
 
@@ -11748,4 +11748,55 @@ textarea.form-control {
   left: 50%;
   opacity: 1;
   visibility: visible;
+}
+
+.report-body{
+  background-color: #ffffff;
+background-image: url(http://www.transparenttextures.com/patterns/diamond-upholstery.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.report-form{
+  margin: 0;
+}
+
+.main-report{
+  padding: 5% 19%;
+}
+
+.report-label{
+  padding: 6px 0;
+  text-transform: capitalize;
+  font-weight: 800;
+
+}
+
+.report-form-fields, .report-label{
+  margin:  15px 0;
+}
+
+.report-heading{
+  text-align: center;
+  padding: 3rem 0 0 0;
+  font-weight: 600;
+}
+
+.report-heading::after{
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 1rem 0;
+  width: 80px;
+  height: 3px;
+  background: #e03a3c;
+  /* bottom: 0; */
+  left: calc(50% - 39px);
+}
+
+button:active , button:focus{
+  outline: none;
+}
+
+.required-start{
+  color:red;
 }
