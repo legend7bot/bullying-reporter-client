@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Button } from '@mui/material';
 import Radio from '@mui/material/Radio';
@@ -12,6 +11,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
 function DashboardReport() {
+  const navigate = useNavigate();
   const { id } = useParams();
   const [reportData, setReportData] = useState();
   const user = JSON.parse(localStorage.getItem('user'));
@@ -58,6 +58,11 @@ function DashboardReport() {
       Report of {id}
       {reportData ? (
         <>
+          <Button
+            variant="outlined"
+            onClick={() => navigate('/dashboard')}>
+            Back to Dashboard
+          </Button>
           <Box
             component="form"
             sx={{
