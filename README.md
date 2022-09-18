@@ -128,3 +128,8 @@ status:  string(),
 isResolved:  boolean(),
 note:  string(),
 ```
+
+# Upcoming Features
+1. Better UI & UX.
+2. Dynamic content on Home Page which can be controlled with the Dashboard.
+3. One to One interaction with counsellor.
