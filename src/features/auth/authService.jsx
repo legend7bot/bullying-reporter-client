@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/';
+const API_URL = 'https://bullying-reporter.herokuapp.com/api/';
 
 // Login user
 const login = async (userData) => {
