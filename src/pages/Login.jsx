@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { login } from '../features/auth/authSlice';
+import { Button } from '@mui/material';
 import './Login.css';
 
 function Login() {
@@ -36,6 +37,11 @@ function Login() {
   return (
     <>
       <div className="login-body">
+        <Button
+          variant="contained"
+          onClick={() => navigate('/')}>
+          Back to Home
+        </Button>
         <div className="container1">
           <div className="screen">
             <div className="screen__content">
