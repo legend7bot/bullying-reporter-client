@@ -52,6 +52,13 @@ Run Server: ``npm start``
 # Body
 email:  string().email().required(),
 password:  string().required(),
+
+#Return Payload
+{
+	token: <JWT Token>,
+	firstName: <firstName>,
+	lastName: <lastName>
+}
 ```
 2. /api/report
 ```
@@ -69,6 +76,20 @@ accusedDetails:  string().required(),
 @get
 # Header
 [Authorization Bearer Token]
+
+#Return Payload
+[{
+	_id,
+	name,
+	email,
+	contact,
+	location,
+	description,
+	accusedDetails,
+	status,
+	isResolved,
+	note
+},...]
 ```
 4. /api/dashboard/reports/report/:id🔒
 ```
@@ -78,6 +99,20 @@ accusedDetails:  string().required(),
 
 # Params
 id: [Report ID]
+
+#Return Payload
+{
+	_id,
+	name,
+	email,
+	contact,
+	location,
+	description,
+	accusedDetails,
+	status,
+	isResolved,
+	note
+}
 ```
 5. /api/dashboard/reports/update/:id🔒
 ```
